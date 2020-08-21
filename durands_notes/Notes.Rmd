@@ -1,0 +1,43 @@
+---
+title: "Notes"
+author: "Durand Sinclair"
+date: "21/08/2020"
+output: html_document
+---
+
+# 1.0 Getting Started
+
+1.1 Business Understanding
+
+I'm the data scientist for a bike manufacturer. 
+They want to create new products based on gaps in their product line. (Eg they don't yet make aluminium bikes).
+However, in manufacturing, you need to have a target price the product must hit to be competitive in the market, so you can decide whether it's worth it to make those products. They don't have a way of consistently pricing their products. They'd like to use machine learning to do it.
+
+1.4 Transactional data
+
+Transactional data is data collected when customers buy our products. We can do three things with it.
+* Time based sales forecasts. (When do people buy? How do we do a budget?)
+* Customer segmentation. (Build customer groups.)
+* Product pricing & new product demand
+
+In this course we'll do
+* Product pricing for new products, based on a linear regression model
+* Customer segmentation using k-means clustering
+
+Orders - A request from the buyer saying what they want to buy
+Invoice - A record of how much the seller charged for that item & payment terms.
+In this course, the whole thing will be called an order. 
+
+An order has 
+* Invoice information (Invoice number & date) 
+* Customer information (Customer name, address, company, customer ID, payment terms)
+* Purchase order (PO Reference)
+* Order lines (Item description, Qty ordered, unit price, total per item, total pretax, tax, grand total)
+
+We'll need to turn this into an entity relationship diagram.
+
+Notes: He used a beautiful Transactional Data Model to show understanding of
+the entity relationships. It was done in draw.io, with a custom background
+
+
+
